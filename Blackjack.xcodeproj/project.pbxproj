@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CAB999018CE8044004537D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAB998F18CE8044004537D3 /* Foundation.framework */; };
+		4CAB999218CE8044004537D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAB999118CE8044004537D3 /* CoreGraphics.framework */; };
+		4CAB999418CE8044004537D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAB999318CE8044004537D3 /* UIKit.framework */; };
+		4CAB999A18CE8044004537D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB999818CE8044004537D3 /* InfoPlist.strings */; };
+		4CAB999C18CE8044004537D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB999B18CE8044004537D3 /* main.m */; };
+		4CAB99A018CE8044004537D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB999F18CE8044004537D3 /* AppDelegate.m */; };
+		4CAB99A318CE8044004537D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99A118CE8044004537D3 /* Main.storyboard */; };
+		4CAB99A618CE8044004537D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB99A518CE8044004537D3 /* ViewController.m */; };
+		4CAB99A818CE8044004537D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99A718CE8044004537D3 /* Images.xcassets */; };
+		4CAB99AF18CE8044004537D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAB99AE18CE8044004537D3 /* XCTest.framework */; };
+		4CAB99B018CE8044004537D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAB998F18CE8044004537D3 /* Foundation.framework */; };
+		4CAB99B118CE8044004537D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAB999318CE8044004537D3 /* UIKit.framework */; };
+		4CAB99B918CE8044004537D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99B718CE8044004537D3 /* InfoPlist.strings */; };
+		4CAB99BB18CE8044004537D3 /* BlackjackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB99BA18CE8044004537D3 /* BlackjackTests.m */; };
+		4CAB99C618CE8071004537D3 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB99C518CE8071004537D3 /* Card.m */; };
+		4CAB99C918CE808D004537D3 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB99C818CE808D004537D3 /* Deck.m */; };
+		4CAB99CC18CE80A4004537D3 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB99CB18CE80A4004537D3 /* Hand.m */; };
+		4CAB99CF18CE80BC004537D3 /* BlackjackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB99CE18CE80BC004537D3 /* BlackjackModel.m */; };
+		4CAB9A0918CFB17A004537D3 /* closed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D118CFB17A004537D3 /* closed.gif */; };
+		4CAB9A0A18CFB17A004537D3 /* club01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D218CFB17A004537D3 /* club01.gif */; };
+		4CAB9A0B18CFB17A004537D3 /* club02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D318CFB17A004537D3 /* club02.gif */; };
+		4CAB9A0C18CFB17A004537D3 /* club03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D418CFB17A004537D3 /* club03.gif */; };
+		4CAB9A0D18CFB17A004537D3 /* club04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D518CFB17A004537D3 /* club04.gif */; };
+		4CAB9A0E18CFB17A004537D3 /* club05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D618CFB17A004537D3 /* club05.gif */; };
+		4CAB9A0F18CFB17A004537D3 /* club06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D718CFB17A004537D3 /* club06.gif */; };
+		4CAB9A1018CFB17A004537D3 /* club07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D818CFB17A004537D3 /* club07.gif */; };
+		4CAB9A1118CFB17A004537D3 /* club08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99D918CFB17A004537D3 /* club08.gif */; };
+		4CAB9A1218CFB17A004537D3 /* club09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99DA18CFB17A004537D3 /* club09.gif */; };
+		4CAB9A1318CFB17A004537D3 /* club10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99DB18CFB17A004537D3 /* club10.gif */; };
+		4CAB9A1418CFB17A004537D3 /* club11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99DC18CFB17A004537D3 /* club11.gif */; };
+		4CAB9A1518CFB17A004537D3 /* club12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99DD18CFB17A004537D3 /* club12.gif */; };
+		4CAB9A1618CFB17A004537D3 /* club13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99DE18CFB17A004537D3 /* club13.gif */; };
+		4CAB9A1718CFB17A004537D3 /* diamond01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99DF18CFB17A004537D3 /* diamond01.gif */; };
+		4CAB9A1818CFB17A004537D3 /* diamond02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E018CFB17A004537D3 /* diamond02.gif */; };
+		4CAB9A1918CFB17A004537D3 /* diamond03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E118CFB17A004537D3 /* diamond03.gif */; };
+		4CAB9A1A18CFB17A004537D3 /* diamond04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E218CFB17A004537D3 /* diamond04.gif */; };
+		4CAB9A1B18CFB17A004537D3 /* diamond05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E318CFB17A004537D3 /* diamond05.gif */; };
+		4CAB9A1C18CFB17A004537D3 /* diamond06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E418CFB17A004537D3 /* diamond06.gif */; };
+		4CAB9A1D18CFB17A004537D3 /* diamond07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E518CFB17A004537D3 /* diamond07.gif */; };
+		4CAB9A1E18CFB17A004537D3 /* diamond08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E618CFB17A004537D3 /* diamond08.gif */; };
+		4CAB9A1F18CFB17A004537D3 /* diamond09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E718CFB17A004537D3 /* diamond09.gif */; };
+		4CAB9A2018CFB17A004537D3 /* diamond10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E818CFB17A004537D3 /* diamond10.gif */; };
+		4CAB9A2118CFB17A004537D3 /* diamond11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99E918CFB17A004537D3 /* diamond11.gif */; };
+		4CAB9A2218CFB17A004537D3 /* diamond12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99EA18CFB17A004537D3 /* diamond12.gif */; };
+		4CAB9A2318CFB17A004537D3 /* diamond13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99EB18CFB17A004537D3 /* diamond13.gif */; };
+		4CAB9A2418CFB17A004537D3 /* GNUlicence.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99EC18CFB17A004537D3 /* GNUlicence.txt */; };
+		4CAB9A2518CFB17A004537D3 /* heart01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99ED18CFB17A004537D3 /* heart01.gif */; };
+		4CAB9A2618CFB17A004537D3 /* heart02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99EE18CFB17A004537D3 /* heart02.gif */; };
+		4CAB9A2718CFB17A004537D3 /* heart03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99EF18CFB17A004537D3 /* heart03.gif */; };
+		4CAB9A2818CFB17A004537D3 /* heart04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F018CFB17A004537D3 /* heart04.gif */; };
+		4CAB9A2918CFB17A004537D3 /* heart05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F118CFB17A004537D3 /* heart05.gif */; };
+		4CAB9A2A18CFB17A004537D3 /* heart06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F218CFB17A004537D3 /* heart06.gif */; };
+		4CAB9A2B18CFB17A004537D3 /* heart07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F318CFB17A004537D3 /* heart07.gif */; };
+		4CAB9A2C18CFB17A004537D3 /* heart08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F418CFB17A004537D3 /* heart08.gif */; };
+		4CAB9A2D18CFB17A004537D3 /* heart09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F518CFB17A004537D3 /* heart09.gif */; };
+		4CAB9A2E18CFB17A004537D3 /* heart10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F618CFB17A004537D3 /* heart10.gif */; };
+		4CAB9A2F18CFB17A004537D3 /* heart11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F718CFB17A004537D3 /* heart11.gif */; };
+		4CAB9A3018CFB17A004537D3 /* heart12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F818CFB17A004537D3 /* heart12.gif */; };
+		4CAB9A3118CFB17A004537D3 /* heart13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99F918CFB17A004537D3 /* heart13.gif */; };
+		4CAB9A3218CFB17A004537D3 /* joker01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99FA18CFB17A004537D3 /* joker01.gif */; };
+		4CAB9A3318CFB17A004537D3 /* joker02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99FB18CFB17A004537D3 /* joker02.gif */; };
+		4CAB9A3418CFB17A004537D3 /* spade01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99FC18CFB17A004537D3 /* spade01.gif */; };
+		4CAB9A3518CFB17A004537D3 /* spade02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99FD18CFB17A004537D3 /* spade02.gif */; };
+		4CAB9A3618CFB17A004537D3 /* spade03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99FE18CFB17A004537D3 /* spade03.gif */; };
+		4CAB9A3718CFB17A004537D3 /* spade04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB99FF18CFB17A004537D3 /* spade04.gif */; };
+		4CAB9A3818CFB17A004537D3 /* spade05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0018CFB17A004537D3 /* spade05.gif */; };
+		4CAB9A3918CFB17A004537D3 /* spade06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0118CFB17A004537D3 /* spade06.gif */; };
+		4CAB9A3A18CFB17A004537D3 /* spade07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0218CFB17A004537D3 /* spade07.gif */; };
+		4CAB9A3B18CFB17A004537D3 /* spade08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0318CFB17A004537D3 /* spade08.gif */; };
+		4CAB9A3C18CFB17A004537D3 /* spade09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0418CFB17A004537D3 /* spade09.gif */; };
+		4CAB9A3D18CFB17A004537D3 /* spade10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0518CFB17A004537D3 /* spade10.gif */; };
+		4CAB9A3E18CFB17A004537D3 /* spade11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0618CFB17A004537D3 /* spade11.gif */; };
+		4CAB9A3F18CFB17A004537D3 /* spade12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0718CFB17A004537D3 /* spade12.gif */; };
+		4CAB9A4018CFB17A004537D3 /* spade13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB9A0818CFB17A004537D3 /* spade13.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CAB99B218CE8044004537D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CAB998418CE8044004537D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAB998B18CE8044004537D3;
+			remoteInfo = Blackjack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CAB998C18CE8044004537D3 /* Blackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAB998F18CE8044004537D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CAB999118CE8044004537D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CAB999318CE8044004537D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CAB999718CE8044004537D3 /* Blackjack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blackjack-Info.plist"; sourceTree = "<group>"; };
+		4CAB999918CE8044004537D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CAB999B18CE8044004537D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CAB999D18CE8044004537D3 /* Blackjack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blackjack-Prefix.pch"; sourceTree = "<group>"; };
+		4CAB999E18CE8044004537D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CAB999F18CE8044004537D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CAB99A218CE8044004537D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CAB99A418CE8044004537D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CAB99A518CE8044004537D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CAB99A718CE8044004537D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CAB99AD18CE8044004537D3 /* BlackjackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackjackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAB99AE18CE8044004537D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4CAB99B618CE8044004537D3 /* BlackjackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlackjackTests-Info.plist"; sourceTree = "<group>"; };
+		4CAB99B818CE8044004537D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CAB99BA18CE8044004537D3 /* BlackjackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackjackTests.m; sourceTree = "<group>"; };
+		4CAB99C418CE8071004537D3 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		4CAB99C518CE8071004537D3 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		4CAB99C718CE808D004537D3 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		4CAB99C818CE808D004537D3 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		4CAB99CA18CE80A4004537D3 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		4CAB99CB18CE80A4004537D3 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		4CAB99CD18CE80BC004537D3 /* BlackjackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackjackModel.h; sourceTree = "<group>"; };
+		4CAB99CE18CE80BC004537D3 /* BlackjackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackjackModel.m; sourceTree = "<group>"; };
+		4CAB99D118CFB17A004537D3 /* closed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = closed.gif; sourceTree = "<group>"; };
+		4CAB99D218CFB17A004537D3 /* club01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club01.gif; sourceTree = "<group>"; };
+		4CAB99D318CFB17A004537D3 /* club02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club02.gif; sourceTree = "<group>"; };
+		4CAB99D418CFB17A004537D3 /* club03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club03.gif; sourceTree = "<group>"; };
+		4CAB99D518CFB17A004537D3 /* club04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club04.gif; sourceTree = "<group>"; };
+		4CAB99D618CFB17A004537D3 /* club05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club05.gif; sourceTree = "<group>"; };
+		4CAB99D718CFB17A004537D3 /* club06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club06.gif; sourceTree = "<group>"; };
+		4CAB99D818CFB17A004537D3 /* club07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club07.gif; sourceTree = "<group>"; };
+		4CAB99D918CFB17A004537D3 /* club08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club08.gif; sourceTree = "<group>"; };
+		4CAB99DA18CFB17A004537D3 /* club09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club09.gif; sourceTree = "<group>"; };
+		4CAB99DB18CFB17A004537D3 /* club10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club10.gif; sourceTree = "<group>"; };
+		4CAB99DC18CFB17A004537D3 /* club11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club11.gif; sourceTree = "<group>"; };
+		4CAB99DD18CFB17A004537D3 /* club12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club12.gif; sourceTree = "<group>"; };
+		4CAB99DE18CFB17A004537D3 /* club13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = club13.gif; sourceTree = "<group>"; };
+		4CAB99DF18CFB17A004537D3 /* diamond01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond01.gif; sourceTree = "<group>"; };
+		4CAB99E018CFB17A004537D3 /* diamond02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond02.gif; sourceTree = "<group>"; };
+		4CAB99E118CFB17A004537D3 /* diamond03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond03.gif; sourceTree = "<group>"; };
+		4CAB99E218CFB17A004537D3 /* diamond04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond04.gif; sourceTree = "<group>"; };
+		4CAB99E318CFB17A004537D3 /* diamond05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond05.gif; sourceTree = "<group>"; };
+		4CAB99E418CFB17A004537D3 /* diamond06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond06.gif; sourceTree = "<group>"; };
+		4CAB99E518CFB17A004537D3 /* diamond07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond07.gif; sourceTree = "<group>"; };
+		4CAB99E618CFB17A004537D3 /* diamond08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond08.gif; sourceTree = "<group>"; };
+		4CAB99E718CFB17A004537D3 /* diamond09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond09.gif; sourceTree = "<group>"; };
+		4CAB99E818CFB17A004537D3 /* diamond10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond10.gif; sourceTree = "<group>"; };
+		4CAB99E918CFB17A004537D3 /* diamond11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond11.gif; sourceTree = "<group>"; };
+		4CAB99EA18CFB17A004537D3 /* diamond12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond12.gif; sourceTree = "<group>"; };
+		4CAB99EB18CFB17A004537D3 /* diamond13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond13.gif; sourceTree = "<group>"; };
+		4CAB99EC18CFB17A004537D3 /* GNUlicence.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GNUlicence.txt; sourceTree = "<group>"; };
+		4CAB99ED18CFB17A004537D3 /* heart01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart01.gif; sourceTree = "<group>"; };
+		4CAB99EE18CFB17A004537D3 /* heart02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart02.gif; sourceTree = "<group>"; };
+		4CAB99EF18CFB17A004537D3 /* heart03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart03.gif; sourceTree = "<group>"; };
+		4CAB99F018CFB17A004537D3 /* heart04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart04.gif; sourceTree = "<group>"; };
+		4CAB99F118CFB17A004537D3 /* heart05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart05.gif; sourceTree = "<group>"; };
+		4CAB99F218CFB17A004537D3 /* heart06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart06.gif; sourceTree = "<group>"; };
+		4CAB99F318CFB17A004537D3 /* heart07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart07.gif; sourceTree = "<group>"; };
+		4CAB99F418CFB17A004537D3 /* heart08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart08.gif; sourceTree = "<group>"; };
+		4CAB99F518CFB17A004537D3 /* heart09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart09.gif; sourceTree = "<group>"; };
+		4CAB99F618CFB17A004537D3 /* heart10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart10.gif; sourceTree = "<group>"; };
+		4CAB99F718CFB17A004537D3 /* heart11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart11.gif; sourceTree = "<group>"; };
+		4CAB99F818CFB17A004537D3 /* heart12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart12.gif; sourceTree = "<group>"; };
+		4CAB99F918CFB17A004537D3 /* heart13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart13.gif; sourceTree = "<group>"; };
+		4CAB99FA18CFB17A004537D3 /* joker01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker01.gif; sourceTree = "<group>"; };
+		4CAB99FB18CFB17A004537D3 /* joker02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker02.gif; sourceTree = "<group>"; };
+		4CAB99FC18CFB17A004537D3 /* spade01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade01.gif; sourceTree = "<group>"; };
+		4CAB99FD18CFB17A004537D3 /* spade02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade02.gif; sourceTree = "<group>"; };
+		4CAB99FE18CFB17A004537D3 /* spade03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade03.gif; sourceTree = "<group>"; };
+		4CAB99FF18CFB17A004537D3 /* spade04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade04.gif; sourceTree = "<group>"; };
+		4CAB9A0018CFB17A004537D3 /* spade05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade05.gif; sourceTree = "<group>"; };
+		4CAB9A0118CFB17A004537D3 /* spade06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade06.gif; sourceTree = "<group>"; };
+		4CAB9A0218CFB17A004537D3 /* spade07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade07.gif; sourceTree = "<group>"; };
+		4CAB9A0318CFB17A004537D3 /* spade08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade08.gif; sourceTree = "<group>"; };
+		4CAB9A0418CFB17A004537D3 /* spade09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade09.gif; sourceTree = "<group>"; };
+		4CAB9A0518CFB17A004537D3 /* spade10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade10.gif; sourceTree = "<group>"; };
+		4CAB9A0618CFB17A004537D3 /* spade11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade11.gif; sourceTree = "<group>"; };
+		4CAB9A0718CFB17A004537D3 /* spade12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade12.gif; sourceTree = "<group>"; };
+		4CAB9A0818CFB17A004537D3 /* spade13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spade13.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CAB998918CE8044004537D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAB999218CE8044004537D3 /* CoreGraphics.framework in Frameworks */,
+				4CAB999418CE8044004537D3 /* UIKit.framework in Frameworks */,
+				4CAB999018CE8044004537D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAB99AA18CE8044004537D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAB99AF18CE8044004537D3 /* XCTest.framework in Frameworks */,
+				4CAB99B118CE8044004537D3 /* UIKit.framework in Frameworks */,
+				4CAB99B018CE8044004537D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CAB998318CE8044004537D3 = {
+			isa = PBXGroup;
+			children = (
+				4CAB999518CE8044004537D3 /* Blackjack */,
+				4CAB99B418CE8044004537D3 /* BlackjackTests */,
+				4CAB998E18CE8044004537D3 /* Frameworks */,
+				4CAB998D18CE8044004537D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CAB998D18CE8044004537D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB998C18CE8044004537D3 /* Blackjack.app */,
+				4CAB99AD18CE8044004537D3 /* BlackjackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CAB998E18CE8044004537D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB998F18CE8044004537D3 /* Foundation.framework */,
+				4CAB999118CE8044004537D3 /* CoreGraphics.framework */,
+				4CAB999318CE8044004537D3 /* UIKit.framework */,
+				4CAB99AE18CE8044004537D3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CAB999518CE8044004537D3 /* Blackjack */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB99D018CFB17A004537D3 /* Cards */,
+				4CAB999E18CE8044004537D3 /* AppDelegate.h */,
+				4CAB999F18CE8044004537D3 /* AppDelegate.m */,
+				4CAB99A118CE8044004537D3 /* Main.storyboard */,
+				4CAB99A418CE8044004537D3 /* ViewController.h */,
+				4CAB99A518CE8044004537D3 /* ViewController.m */,
+				4CAB99A718CE8044004537D3 /* Images.xcassets */,
+				4CAB999618CE8044004537D3 /* Supporting Files */,
+				4CAB99C418CE8071004537D3 /* Card.h */,
+				4CAB99C518CE8071004537D3 /* Card.m */,
+				4CAB99C718CE808D004537D3 /* Deck.h */,
+				4CAB99C818CE808D004537D3 /* Deck.m */,
+				4CAB99CA18CE80A4004537D3 /* Hand.h */,
+				4CAB99CB18CE80A4004537D3 /* Hand.m */,
+				4CAB99CD18CE80BC004537D3 /* BlackjackModel.h */,
+				4CAB99CE18CE80BC004537D3 /* BlackjackModel.m */,
+			);
+			path = Blackjack;
+			sourceTree = "<group>";
+		};
+		4CAB999618CE8044004537D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB999718CE8044004537D3 /* Blackjack-Info.plist */,
+				4CAB999818CE8044004537D3 /* InfoPlist.strings */,
+				4CAB999B18CE8044004537D3 /* main.m */,
+				4CAB999D18CE8044004537D3 /* Blackjack-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CAB99B418CE8044004537D3 /* BlackjackTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB99BA18CE8044004537D3 /* BlackjackTests.m */,
+				4CAB99B518CE8044004537D3 /* Supporting Files */,
+			);
+			path = BlackjackTests;
+			sourceTree = "<group>";
+		};
+		4CAB99B518CE8044004537D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB99B618CE8044004537D3 /* BlackjackTests-Info.plist */,
+				4CAB99B718CE8044004537D3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CAB99D018CFB17A004537D3 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB99D118CFB17A004537D3 /* closed.gif */,
+				4CAB99D218CFB17A004537D3 /* club01.gif */,
+				4CAB99D318CFB17A004537D3 /* club02.gif */,
+				4CAB99D418CFB17A004537D3 /* club03.gif */,
+				4CAB99D518CFB17A004537D3 /* club04.gif */,
+				4CAB99D618CFB17A004537D3 /* club05.gif */,
+				4CAB99D718CFB17A004537D3 /* club06.gif */,
+				4CAB99D818CFB17A004537D3 /* club07.gif */,
+				4CAB99D918CFB17A004537D3 /* club08.gif */,
+				4CAB99DA18CFB17A004537D3 /* club09.gif */,
+				4CAB99DB18CFB17A004537D3 /* club10.gif */,
+				4CAB99DC18CFB17A004537D3 /* club11.gif */,
+				4CAB99DD18CFB17A004537D3 /* club12.gif */,
+				4CAB99DE18CFB17A004537D3 /* club13.gif */,
+				4CAB99DF18CFB17A004537D3 /* diamond01.gif */,
+				4CAB99E018CFB17A004537D3 /* diamond02.gif */,
+				4CAB99E118CFB17A004537D3 /* diamond03.gif */,
+				4CAB99E218CFB17A004537D3 /* diamond04.gif */,
+				4CAB99E318CFB17A004537D3 /* diamond05.gif */,
+				4CAB99E418CFB17A004537D3 /* diamond06.gif */,
+				4CAB99E518CFB17A004537D3 /* diamond07.gif */,
+				4CAB99E618CFB17A004537D3 /* diamond08.gif */,
+				4CAB99E718CFB17A004537D3 /* diamond09.gif */,
+				4CAB99E818CFB17A004537D3 /* diamond10.gif */,
+				4CAB99E918CFB17A004537D3 /* diamond11.gif */,
+				4CAB99EA18CFB17A004537D3 /* diamond12.gif */,
+				4CAB99EB18CFB17A004537D3 /* diamond13.gif */,
+				4CAB99EC18CFB17A004537D3 /* GNUlicence.txt */,
+				4CAB99ED18CFB17A004537D3 /* heart01.gif */,
+				4CAB99EE18CFB17A004537D3 /* heart02.gif */,
+				4CAB99EF18CFB17A004537D3 /* heart03.gif */,
+				4CAB99F018CFB17A004537D3 /* heart04.gif */,
+				4CAB99F118CFB17A004537D3 /* heart05.gif */,
+				4CAB99F218CFB17A004537D3 /* heart06.gif */,
+				4CAB99F318CFB17A004537D3 /* heart07.gif */,
+				4CAB99F418CFB17A004537D3 /* heart08.gif */,
+				4CAB99F518CFB17A004537D3 /* heart09.gif */,
+				4CAB99F618CFB17A004537D3 /* heart10.gif */,
+				4CAB99F718CFB17A004537D3 /* heart11.gif */,
+				4CAB99F818CFB17A004537D3 /* heart12.gif */,
+				4CAB99F918CFB17A004537D3 /* heart13.gif */,
+				4CAB99FA18CFB17A004537D3 /* joker01.gif */,
+				4CAB99FB18CFB17A004537D3 /* joker02.gif */,
+				4CAB99FC18CFB17A004537D3 /* spade01.gif */,
+				4CAB99FD18CFB17A004537D3 /* spade02.gif */,
+				4CAB99FE18CFB17A004537D3 /* spade03.gif */,
+				4CAB99FF18CFB17A004537D3 /* spade04.gif */,
+				4CAB9A0018CFB17A004537D3 /* spade05.gif */,
+				4CAB9A0118CFB17A004537D3 /* spade06.gif */,
+				4CAB9A0218CFB17A004537D3 /* spade07.gif */,
+				4CAB9A0318CFB17A004537D3 /* spade08.gif */,
+				4CAB9A0418CFB17A004537D3 /* spade09.gif */,
+				4CAB9A0518CFB17A004537D3 /* spade10.gif */,
+				4CAB9A0618CFB17A004537D3 /* spade11.gif */,
+				4CAB9A0718CFB17A004537D3 /* spade12.gif */,
+				4CAB9A0818CFB17A004537D3 /* spade13.gif */,
+			);
+			path = Cards;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CAB998B18CE8044004537D3 /* Blackjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAB99BE18CE8044004537D3 /* Build configuration list for PBXNativeTarget "Blackjack" */;
+			buildPhases = (
+				4CAB998818CE8044004537D3 /* Sources */,
+				4CAB998918CE8044004537D3 /* Frameworks */,
+				4CAB998A18CE8044004537D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blackjack;
+			productName = Blackjack;
+			productReference = 4CAB998C18CE8044004537D3 /* Blackjack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CAB99AC18CE8044004537D3 /* BlackjackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAB99C118CE8044004537D3 /* Build configuration list for PBXNativeTarget "BlackjackTests" */;
+			buildPhases = (
+				4CAB99A918CE8044004537D3 /* Sources */,
+				4CAB99AA18CE8044004537D3 /* Frameworks */,
+				4CAB99AB18CE8044004537D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CAB99B318CE8044004537D3 /* PBXTargetDependency */,
+			);
+			name = BlackjackTests;
+			productName = BlackjackTests;
+			productReference = 4CAB99AD18CE8044004537D3 /* BlackjackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CAB998418CE8044004537D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jessica Wu";
+				TargetAttributes = {
+					4CAB99AC18CE8044004537D3 = {
+						TestTargetID = 4CAB998B18CE8044004537D3;
+					};
+				};
+			};
+			buildConfigurationList = 4CAB998718CE8044004537D3 /* Build configuration list for PBXProject "Blackjack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CAB998318CE8044004537D3;
+			productRefGroup = 4CAB998D18CE8044004537D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CAB998B18CE8044004537D3 /* Blackjack */,
+				4CAB99AC18CE8044004537D3 /* BlackjackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CAB998A18CE8044004537D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAB9A3E18CFB17A004537D3 /* spade11.gif in Resources */,
+				4CAB9A3B18CFB17A004537D3 /* spade08.gif in Resources */,
+				4CAB9A2C18CFB17A004537D3 /* heart08.gif in Resources */,
+				4CAB9A3418CFB17A004537D3 /* spade01.gif in Resources */,
+				4CAB9A4018CFB17A004537D3 /* spade13.gif in Resources */,
+				4CAB9A1C18CFB17A004537D3 /* diamond06.gif in Resources */,
+				4CAB9A3618CFB17A004537D3 /* spade03.gif in Resources */,
+				4CAB9A0D18CFB17A004537D3 /* club04.gif in Resources */,
+				4CAB9A2F18CFB17A004537D3 /* heart11.gif in Resources */,
+				4CAB9A3818CFB17A004537D3 /* spade05.gif in Resources */,
+				4CAB9A1E18CFB17A004537D3 /* diamond08.gif in Resources */,
+				4CAB9A0918CFB17A004537D3 /* closed.gif in Resources */,
+				4CAB9A2518CFB17A004537D3 /* heart01.gif in Resources */,
+				4CAB9A2418CFB17A004537D3 /* GNUlicence.txt in Resources */,
+				4CAB9A2718CFB17A004537D3 /* heart03.gif in Resources */,
+				4CAB99A818CE8044004537D3 /* Images.xcassets in Resources */,
+				4CAB9A1D18CFB17A004537D3 /* diamond07.gif in Resources */,
+				4CAB9A1418CFB17A004537D3 /* club11.gif in Resources */,
+				4CAB9A2318CFB17A004537D3 /* diamond13.gif in Resources */,
+				4CAB9A1618CFB17A004537D3 /* club13.gif in Resources */,
+				4CAB9A2B18CFB17A004537D3 /* heart07.gif in Resources */,
+				4CAB9A3C18CFB17A004537D3 /* spade09.gif in Resources */,
+				4CAB9A2918CFB17A004537D3 /* heart05.gif in Resources */,
+				4CAB9A3218CFB17A004537D3 /* joker01.gif in Resources */,
+				4CAB9A1218CFB17A004537D3 /* club09.gif in Resources */,
+				4CAB9A1B18CFB17A004537D3 /* diamond05.gif in Resources */,
+				4CAB999A18CE8044004537D3 /* InfoPlist.strings in Resources */,
+				4CAB9A3118CFB17A004537D3 /* heart13.gif in Resources */,
+				4CAB9A1A18CFB17A004537D3 /* diamond04.gif in Resources */,
+				4CAB9A2218CFB17A004537D3 /* diamond12.gif in Resources */,
+				4CAB9A2D18CFB17A004537D3 /* heart09.gif in Resources */,
+				4CAB9A3318CFB17A004537D3 /* joker02.gif in Resources */,
+				4CAB9A1118CFB17A004537D3 /* club08.gif in Resources */,
+				4CAB9A1518CFB17A004537D3 /* club12.gif in Resources */,
+				4CAB9A2618CFB17A004537D3 /* heart02.gif in Resources */,
+				4CAB9A1F18CFB17A004537D3 /* diamond09.gif in Resources */,
+				4CAB9A3518CFB17A004537D3 /* spade02.gif in Resources */,
+				4CAB9A2118CFB17A004537D3 /* diamond11.gif in Resources */,
+				4CAB9A3F18CFB17A004537D3 /* spade12.gif in Resources */,
+				4CAB9A0A18CFB17A004537D3 /* club01.gif in Resources */,
+				4CAB9A3D18CFB17A004537D3 /* spade10.gif in Resources */,
+				4CAB9A1718CFB17A004537D3 /* diamond01.gif in Resources */,
+				4CAB9A1018CFB17A004537D3 /* club07.gif in Resources */,
+				4CAB9A2818CFB17A004537D3 /* heart04.gif in Resources */,
+				4CAB9A1918CFB17A004537D3 /* diamond03.gif in Resources */,
+				4CAB9A0B18CFB17A004537D3 /* club02.gif in Resources */,
+				4CAB9A1818CFB17A004537D3 /* diamond02.gif in Resources */,
+				4CAB9A2A18CFB17A004537D3 /* heart06.gif in Resources */,
+				4CAB99A318CE8044004537D3 /* Main.storyboard in Resources */,
+				4CAB9A3018CFB17A004537D3 /* heart12.gif in Resources */,
+				4CAB9A0E18CFB17A004537D3 /* club05.gif in Resources */,
+				4CAB9A3718CFB17A004537D3 /* spade04.gif in Resources */,
+				4CAB9A1318CFB17A004537D3 /* club10.gif in Resources */,
+				4CAB9A0F18CFB17A004537D3 /* club06.gif in Resources */,
+				4CAB9A2018CFB17A004537D3 /* diamond10.gif in Resources */,
+				4CAB9A2E18CFB17A004537D3 /* heart10.gif in Resources */,
+				4CAB9A3918CFB17A004537D3 /* spade06.gif in Resources */,
+				4CAB9A0C18CFB17A004537D3 /* club03.gif in Resources */,
+				4CAB9A3A18CFB17A004537D3 /* spade07.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAB99AB18CE8044004537D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAB99B918CE8044004537D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CAB998818CE8044004537D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAB99CF18CE80BC004537D3 /* BlackjackModel.m in Sources */,
+				4CAB99CC18CE80A4004537D3 /* Hand.m in Sources */,
+				4CAB99C918CE808D004537D3 /* Deck.m in Sources */,
+				4CAB99A618CE8044004537D3 /* ViewController.m in Sources */,
+				4CAB99A018CE8044004537D3 /* AppDelegate.m in Sources */,
+				4CAB999C18CE8044004537D3 /* main.m in Sources */,
+				4CAB99C618CE8071004537D3 /* Card.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAB99A918CE8044004537D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAB99BB18CE8044004537D3 /* BlackjackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CAB99B318CE8044004537D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CAB998B18CE8044004537D3 /* Blackjack */;
+			targetProxy = 4CAB99B218CE8044004537D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CAB999818CE8044004537D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CAB999918CE8044004537D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CAB99A118CE8044004537D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CAB99A218CE8044004537D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CAB99B718CE8044004537D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CAB99B818CE8044004537D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CAB99BC18CE8044004537D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CAB99BD18CE8044004537D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CAB99BF18CE8044004537D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blackjack/Blackjack-Prefix.pch";
+				INFOPLIST_FILE = "Blackjack/Blackjack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CAB99C018CE8044004537D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blackjack/Blackjack-Prefix.pch";
+				INFOPLIST_FILE = "Blackjack/Blackjack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CAB99C218CE8044004537D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blackjack.app/Blackjack";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blackjack/Blackjack-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlackjackTests/BlackjackTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4CAB99C318CE8044004537D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blackjack.app/Blackjack";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blackjack/Blackjack-Prefix.pch";
+				INFOPLIST_FILE = "BlackjackTests/BlackjackTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CAB998718CE8044004537D3 /* Build configuration list for PBXProject "Blackjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAB99BC18CE8044004537D3 /* Debug */,
+				4CAB99BD18CE8044004537D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAB99BE18CE8044004537D3 /* Build configuration list for PBXNativeTarget "Blackjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAB99BF18CE8044004537D3 /* Debug */,
+				4CAB99C018CE8044004537D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAB99C118CE8044004537D3 /* Build configuration list for PBXNativeTarget "BlackjackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAB99C218CE8044004537D3 /* Debug */,
+				4CAB99C318CE8044004537D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CAB998418CE8044004537D3 /* Project object */;
+}
